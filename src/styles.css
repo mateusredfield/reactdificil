@@ -1,0 +1,94 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+:root {
+  --largura: calc(100vw - (100vw - 100%));
+}
+
+*,
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Inter, sans-serif;
+  background-color: #282d35;
+}
+
+.Cabecarallho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--largura);
+  height: 75px;
+  background-color: #21222a;
+  color: #61dafb;
+  font-family: Inter, sans-serif;
+}
+
+.NavEsquerda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavImg {
+  display: flex;
+  justify-self: start;
+  align-items: start;
+  margin-left: 10px;
+  width: 60px;
+  height: 50px;
+}
+
+.pultaqoparil {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.UlRight {
+  list-style: none;
+  display: flex;
+  justify-self: end;
+  align-self: center;
+  margin-right: 10px;
+  color: white;
+}
+
+.UlRight > li {
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+.ConteudoCentral {
+  background-color: #282d35;
+  color: white;
+  padding: 57px 27px;
+  height: 70vh;
+  background-image: url("./naointeressa3.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% + 125px);
+  background-position-y: 57px;
+  background-size: 250px 250px;
+}
+
+.TituloConteudoCentral {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ConteudoCentral li {
+  line-height: 20px;
+  padding-block: 7px;
+}
+
+.ConteudoCentral li::marker {
+  font-size: 1.4em;
+  color: #61dafb;
+}
